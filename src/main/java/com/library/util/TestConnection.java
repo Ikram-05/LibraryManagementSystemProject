@@ -9,16 +9,7 @@ import javax.persistence.Persistence;
 
 public class TestConnection {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/Project_1?createDatabaseIfNotExist=true&serverTimezone=UTC";
-        String user = "root";
-        String password = "admin";
-        try {
-            Connection connection = DriverManager.getConnection(url, user, password);
-            System.out.println("Connection successful!");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        EntityManagerFactory fac=Persistence.createEntityManagerFactory("lib");
-        System.out.println("Done"+fac);
+       EntityManagerFactory fac=Persistence.createEntityManagerFactory("lib");
+       System.out.println(fac);
     }
 }

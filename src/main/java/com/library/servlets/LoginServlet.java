@@ -29,9 +29,9 @@ public class LoginServlet extends HttpServlet {
             
             // Redirect based on user role
             if ("Admin".equalsIgnoreCase(user.getRole())) {
-                response.sendRedirect("admin");
+                response.sendRedirect("adminServlet");
             } else {
-                response.sendRedirect("student");
+                response.sendRedirect("studentServlet");
             }
         } else {
             // Invalid credentials

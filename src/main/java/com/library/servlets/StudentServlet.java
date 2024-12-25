@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.library.dao.BookDAO;
 import com.library.entities.Book;
-@WebServlet("/student")
+@WebServlet("/studentServlet")
 public class StudentServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

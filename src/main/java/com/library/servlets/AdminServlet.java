@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import com.library.dao.BookDAO;
 import com.library.entities.Book;
-@WebServlet("/admin")
+@WebServlet("/adminServlet")
 public class AdminServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

@@ -38,7 +38,7 @@ public class BookDAO {
     public List<Book> getAllBooks() {
         EntityManager entityManager = JPAUtil.getEntityManagerFactory().createEntityManager();
         try {
-            TypedQuery<Book> query = entityManager.createQuery("FROM Books", Book.class);
+            TypedQuery<Book> query = entityManager.createQuery("FROM Book", Book.class);
             return query.getResultList();
         } finally {
             entityManager.close();
