@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Logout</title>
+    <title>Borrow Book</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,6 +21,10 @@
             text-align: center;
             color: #0078D4;
         }
+        p {
+            font-size: 18px;
+            text-align: center;
+        }
         .back-link {
             display: block;
             text-align: center;
@@ -38,8 +42,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>You have been logged out successfully!</h1>
-        <a href="index.jsp" class="back-link">Click here to login again</a>
+        <h1>Borrow Book Confirmation</h1>
+        <p>Your book has been successfully borrowed!</p>
+        <p><strong>Book Title:</strong> ${book.title}</p>
+        <p><strong>Author:</strong> ${book.author}</p>
+        <a href="student.jsp" class="back-link">Back to Dashboard</a>
     </div>
 </body>
 </html>
